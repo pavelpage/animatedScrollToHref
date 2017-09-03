@@ -4,7 +4,7 @@
         var settings = $.extend({
             delay: 1300,
             addedHeight: 0,
-            afterScroll : {},
+            afterScroll : function(){},
         }, options );
 
         $('body').on('click.animatedScrollToHref touchstart.animatedScrollToHref', selector, function () {
